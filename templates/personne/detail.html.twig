@@ -1,0 +1,6 @@
+ {% block body %}
+<link rel="stylesheet" href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.css') }}">
+<div class="alert alert-success">
+    {{ personne.firstName }} {{ personne.lastName }} {{ personne.age }}
+</div>
+{% endblock %} {% block title %} {{ personne.firstName }} {{ personne.lastName }} {% endblock %}

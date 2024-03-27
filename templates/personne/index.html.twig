@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        {% for personna in personne %}
+        <div class="card col-3">
+            <div class="card-body">
+                <h4 class="card-title">{{ personna.firstName }}</h4>
+                <p class="card-text">{{ personna.firstName}} {{ personna.lastName }}</p>
+                <p class="card-text">{{ personna.age }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
